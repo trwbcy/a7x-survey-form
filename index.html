@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A7X Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">A7X Survey Form</h1>
+    <p id="description">Please Fill the Form, Thank You.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name..." required />
+      </label>
+
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email..." required />
+      </label>
+
+      <label for="number" id="number-label">
+        Age
+        <input type="number" id="number" placeholder="How old are you..." min="17" max="60" />
+      </label>
+
+      <label for="dropdown" id="dropdown-label">
+        Which option best describes your current role?
+        <select id="dropdown">
+          <option>Student</option>
+          <option>Full time job</option>
+          <option>Full time learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <br />
+
+      <label for="member" id="member-label"> Who is your favourite member?</label>
+      <input type="radio" name="member" value="1" checked />M Shadows <br />
+      <input type="radio" name="member" value="2" />Synster Gates
+      <br />
+      <input type="radio" name="member" value="3" />Zacky Vengeance
+      <br />
+      <input type="radio" name="member" value="4" />Jhonny Christ
+      <br />
+      <input type="radio" name="member" value="5" />Arin Ilejay
+
+      <br /><br />
+      <label for="albums" id="albums-label"> Please select your favourite albums?</label>
+      <input type="checkbox" value="black-reign" checked />Black Reign <br />
+      <input type="checkbox" value="the-stage" />The Stage
+      <br />
+      <input type="checkbox" value="hail-to-the-king" />Hail To The King
+      <br />
+      <input type="checkbox" value="nightmare" />Nightmare
+      <br />
+      <input type="checkbox" value="city-of-evil" />City Of Evil
+
+      <br /><br />
+      <label for="comments" id="comments-label">
+        Any comments or suggestions?
+        <textarea id="comments" cols="30" rows="10"></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+      </label>
+
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </form>
+  </body>
+</html>

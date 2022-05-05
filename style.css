@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&family=Poppins:ital,wght@0,400;1,200&family=Roboto+Condensed&family=Roboto:wght@100&family=Water+Brush&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(291deg, rgba(249, 242, 239, 0.5) 100%, rgba(2, 0, 36, 0.5) 100%, rgba(0, 212, 255, 0.5) 100%), url(img/a7x.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  min-height: 2000px;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: white;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 25px;
+}
+
+label,
+input,
+select {
+  display: block;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select,
+textarea {
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: 0;
+  padding: 10px;
+  font-family: inherit;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  display: inline;
+}
+
+button {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(81, 151, 15);
+  border-radius: 5px;
+  border: 0;
+}
